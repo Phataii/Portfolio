@@ -1,4 +1,18 @@
-import { Link } from "react-router-dom";
+import { GiWindSlap } from "react-icons/gi";
+import { FiCodesandbox } from "react-icons/fi";
+import { FaCode } from "react-icons/fa";
+
+import { FaReact } from "react-icons/fa";
+import { FaNode } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import { TiHtml5 } from "react-icons/ti";
+import { DiCss3Full } from "react-icons/di";
+import { SiTailwindcss } from "react-icons/si";
+import { SiBootstrap } from "react-icons/si";
+import { DiJavascript } from "react-icons/di";
+import { FaGitAlt } from "react-icons/fa";
+import { SiCsharp } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
 function Index() {
   return (
     <div className="">
@@ -8,7 +22,6 @@ function Index() {
       <nav>
         <div className="flex justify-around">
           <div className="md:ml-28 mt-2">
-            {" "}
             <img
               src={require("../img/logo.png")}
               alt="Logo"
@@ -67,35 +80,131 @@ function Index() {
           <p className="mb-2">
             I am a full stack developer who build software application
           </p>
-          <button className="bg-primary p-2 hover:bg-black hover:border-2 hover:border-primary w-48">
+          <button className="bg-primary border-2  p-2 hover:bg-transparent border-primary w-48">
             Get in touch{" "}
           </button>
         </div>
       </section>
 
       {/* About Section */}
-      {/* <section className="grid md:grid-cols-2 mt-16">
-        <div className="md:col-span-1 mt-28 ml-20">
-          <p>Yup!!! You found me</p>
-        
-          <p>I am a full stack developer who build software application</p>
-          <div>
-            <button>Ring me </button>
-            <button> Resume</button>
-          </div>
-        </div>
-        <div className="md:col-span-1 hidden md:block">
-          <div>
-            <img
-              src={require("../img/face.png")}
-              alt="Logo"
-              className="h-96"
-            />
-          </div>
-        </div>
-      </section> */}
-      {/* Job Section */}
+      <section className="mt-16">
+        <div className="grid md:grid-cols-2 mx-16 bg-neutral-900">
+          <div className="md:col-span-1 mx-10">
+            <h1 className="mt-48 text-4xl">About Me</h1>
 
+            <p className="text-xl">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+              deserunt voluptate saepe, accusamus atque consequuntur odio illo
+              natus quis provident ut labore aspernatur veritatis maiores ea eum
+              maxime omnis. Qui!
+            </p>
+            <br />
+            <p className="text-xl">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+              deserunt voluptate saepe, accusamus atque consequuntur odio illo
+              natus quis provident ut labore aspernatur veritatis maiores ea eum
+              maxime omnis. Qui!
+            </p>
+          </div>
+          <div className="md:col-span-1 hidden md:block">
+            <div>
+              <img
+                src={require("../img/programmer.png")}
+                alt="Logo"
+                className=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Job Section */}
+      <section className="mt-32">
+        <h1 className="text-center text-4xl mt-10">What I Offer</h1>
+        <div className="grid md:grid-cols-3">
+          <div className="text-center">
+            <FiCodesandbox className="text-primary text-10xl ml-48" />
+            <h3 className="font-bold text-2xl">Aesthetics</h3>
+            <p className="p-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+              repellendus mollitia. Quos voluptatibus officiis velit quasi eum
+              deserunt magni excepturi, sequi, aut ad nesciunt dolorem ut quae
+              nobis commodi impedit.
+            </p>
+          </div>
+          <div className="text-center">
+            <FaCode className="text-primary text-10xl ml-48" />
+            <h3 className="font-bold text-2xl">Creativity</h3>
+            <p className="p-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+              repellendus mollitia. Quos voluptatibus officiis velit quasi eum
+              deserunt magni excepturi, sequi, aut ad nesciunt dolorem ut quae
+              nobis commodi impedit.
+            </p>
+          </div>
+          <div className="text-center">
+            <GiWindSlap className="text-primary text-10xl ml-48" />
+            <h3 className="font-bold text-2xl">Speed</h3>
+            <p className="p-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+              repellendus mollitia. Quos voluptatibus officiis velit quasi eum
+              deserunt magni excepturi, sequi, aut ad nesciunt dolorem ut quae
+              nobis commodi impedit.
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* Tech Section */}
+      <section>
+        <h1 className="text-center text-4xl mb-20">Tech I Use</h1>
+        <div id="default-carousel" class="relative" data-carousel="static">
+          <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+            <div
+              class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+              data-carousel-item=""
+            >
+              <div className="grid grid-cols-6">
+                <FaReact className="text-primary text-10xl ml-16" />
+                <FaNode className="text-primary text-10xl ml-16" />
+                <SiExpress className="text-primary text-10xl ml-16" />
+                <SiMongodb className="text-primary text-10xl ml-16" />
+                <SiTailwindcss className="text-primary text-10xl ml-16" />
+                <DiJavascript className="text-primary text-10xl ml-16" />
+              </div>
+            </div>
+            <div
+              class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10"
+              data-carousel-item=""
+            >
+              <div className="grid grid-cols-6">
+                <TiHtml5 className="text-primary text-10xl ml-16" />
+                <DiCss3Full className="text-primary text-10xl ml-16" />
+                <SiBootstrap className="text-primary text-10xl ml-16" />
+                <SiCsharp className="text-primary text-10xl ml-16" />
+                <FaGitAlt className="text-primary text-10xl ml-16" />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full bg-white dark:bg-gray-800"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+           </div>
+
+         
+        </div>
+      </section>
       {/* Contact Section */}
     </div>
   );

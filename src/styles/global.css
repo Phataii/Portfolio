@@ -3585,7 +3585,9 @@ video {
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
-
+.bg-neutral-900	{
+  background-color: rgb(23 23 23);
+}
 .bg-repeat-x {
   background-repeat: repeat-x;
 }
@@ -6333,7 +6335,18 @@ video {
 .text-6xl {
   font-size: 4rem;
 }
-
+.text-7xl {
+  font-size: 5rem;
+}
+.text-8xl {
+  font-size: 6rem;
+}
+.text-9xl {
+  font-size: 7rem;
+}
+.text-10xl {
+  font-size: 8rem;
+}
 .leading-3 {
   line-height: .75rem;
 }
@@ -14129,6 +14142,7 @@ video {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .w-0 {
   width: 0;
 }
