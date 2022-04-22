@@ -59,7 +59,7 @@ function Index() {
       {/* Home Section */}
       <section className="grid md:grid-cols-2 mt-16">
         <div className="md:col-span-1 hidden md:block">
-          <div className="bg-red-500b">
+          <div className="">
             <img
               src={require("../img/bg1.png")}
               alt="Logo"
@@ -162,7 +162,7 @@ function Index() {
               class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
               data-carousel-item=""
             >
-              <div className="grid grid-cols-6">
+              <div className="md:grid md:grid-cols-6">
                 <FaReact className="text-primary text-10xl ml-16" />
                 <FaNode className="text-primary text-10xl ml-16" />
                 <SiExpress className="text-primary text-10xl ml-16" />
@@ -175,7 +175,7 @@ function Index() {
               class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10"
               data-carousel-item=""
             >
-              <div className="grid grid-cols-6">
+              <div className="md:grid md:grid-cols-6">
                 <TiHtml5 className="text-primary text-10xl ml-16" />
                 <DiCss3Full className="text-primary text-10xl ml-16" />
                 <SiBootstrap className="text-primary text-10xl ml-16" />
@@ -200,12 +200,50 @@ function Index() {
               aria-label="Slide 2"
               data-carousel-slide-to="1"
             ></button>
-           </div>
-
-         
+          </div>
         </div>
       </section>
       {/* Contact Section */}
+      <section className="">
+        
+        <div className="grid md:grid-cols-2 mx-16 bg-neutral-900">
+          <div>
+          
+            <form className="mt-24 mx-5">
+            <h2 className=" text-5xl mb-10">Let's Talk</h2>
+            <h2>Send me a message via esanni5@gmail.com or fill the form below</h2>
+            <input
+                type="text"
+                placeholder="Name"
+                className="border-t-0 border-r-0 border-l-0 text-gray-900 border-primary w-full mt-1 mb-3 bg-transparent"
+              />
+              <br />
+              <input
+                type="email"
+                placeholder="Email"
+                className="border-t-0 border-r-0 border-l-0 text-gray-900 border-primary w-full mt-1 mb-3 bg-transparent"
+              />
+              <br />
+              <textarea
+                type="text"
+                placeholder="Message"
+                className="border-t-0 border-r-0 border-l-0 text-gray-900 border-primary w-full mb-3 mt-6 bg-transparent"
+              />
+              <br />
+              <button type="submit" className="bg-primary font-bold p-2 w-1/5">Submit</button>
+            </form>
+          </div>
+
+          <div>
+            <img
+              src={require("../img/contact.png")}
+              alt="Logo"
+              className=""
+              width="80%"
+            />
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
